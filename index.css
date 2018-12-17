@@ -1,0 +1,234 @@
+.menudiv1
+{
+    margin: 7px 10px;
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+}
+.menudiv2
+{
+    margin:0px 20px;
+    display:flex; 
+    justify-content:space-around; 
+
+}
+p
+{
+    font-size: 30px;
+    color:black;
+}
+.img1
+{
+    display:flex;
+    width:30%;height:400px;
+    justify-content:center;
+}
+
+.screendiv
+{
+    display:flex;
+    justify-content: space-around; 
+    width:100%;  
+}
+.razdel
+{
+    color:black;
+    text-align: center;
+}
+.action:hover
+{
+    background: red;
+}
+li 
+{
+    text-decoration: none;
+    float: left;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.img2
+{
+    width:85%;
+    height:400px;
+    padding:0px 20px;
+}
+.img3
+{
+    padding:0px 30px;
+    width:60%;
+    height:400px;
+}
+.img4
+{
+    width:40%;
+    height:400px;
+}
+.me
+{
+    width:300px;
+    height:300px;
+}
+
+
+@media screen and (max-width: 600px)
+{
+.screendiv
+{
+    flex-direction: column;
+    margin: auto; 
+    width:100%;  
+}
+.img1,.img11
+{
+    padding: 0px 10px;
+    width:99%;height:400px;
+}
+.telP
+{
+    padding:0px 10px;
+}
+li .hidden
+{
+    text-align: center;
+    display: none;
+}
+li:hover .hidden
+{
+    display: block;
+    align-items: center;
+    
+}
+ul 
+{
+    list-style-type: none;
+    align-items: center;
+    display: inline-block;
+    flex-direction: column;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.canvas
+{
+    position: relative;
+    margin: 0 auto; 
+    
+}
+.field_play
+{
+    display: block;
+}
+.main
+{
+    width: 662px;
+    height: 431px;
+    display: flex;
+    justify-content: flex-start;
+    background: url('battlefield/grid.png') repeat;
+}
+.ship
+{
+    margin:0px 10px;
+}
+.field
+{
+    display: none;
+}
+.p1
+{
+    font-size: 30px;
+    font-family: 'Kalam', cursive ;
+    display:inline;
+    position: relative;
+    color:rgb(25, 112, 211);
+    
+}
+.sec
+{
+    font-size: 30px;
+    margin: 0px 30px;
+    font-family: 'Kalam', cursive ;
+}
+
+
+.button1,.play,.button2
+{
+    height: 50px;
+    width: 148px;
+}
+.button1
+{
+    background-image: url("IF/again.png");
+    margin:0px 138px; 
+}
+.button2
+{
+    width: 144px;
+    background-image: url("IF/menu.png");
+    position: absolute;
+    top:383px;
+    left:320px;
+
+}
+.play
+{
+    background-image: url("IF/play.png");
+}
+
+.win
+{
+    display: none;
+    height: 270px;
+    width: 659px;
+    background-color: lightblue;
+    box-shadow: 0 0 10px black;
+}
+.return_b
+{
+    height: 48px;
+    width: 48px;
+    background-image: url("IF/return.png");
+    position:fixed; 
+    top:auto;
+    bottom:10px;
+    left:auto; 
+    right:10px;
+}
+.rules_button,.menu_button,.screen_button,.author_button
+{
+    height: 49px;
+    width: 143px; 
+}
+.rules_button
+{  
+    background-image: url("IF/rules.png");
+}
+.menu_button
+{
+    background-image: url("IF/menu.png"); 
+}
+.screen_button
+{
+    background-image: url("IF/screen1.png");
+}
+.author_button
+{
+    background-image: url("IF/author.png");
+}
