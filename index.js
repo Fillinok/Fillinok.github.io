@@ -343,8 +343,7 @@ var drawingCanvas = document.getElementById('smile');
                     drawingCanvas.style.display="none";
                     win3.style.display="none";
                     again.style.position="relative";
-                    again.style.top="320px";
-                    again.style.left="135px";
+                    again.style.top="357px";
                     document.getElementById('stopwatch2').innerHTML=" Количество ходов: "+kol2+ '\n'+ " Время: "+readout; 
             }         
 

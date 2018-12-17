@@ -73,42 +73,8 @@ ul {
 }
 
 
-@media screen and (max-width: 600px)
-{
-.screendiv
-{
-    flex-direction: column;
-    margin: auto; 
-    width:100%;  
-}
-.img1,.img11
-{
-    padding: 0px 10px;
-    width:99%;height:400px;
-}
-.telP
-{
-    padding:0px 10px;
-}
-li .hidden
-{
-    text-align: center;
-    display: none;
-}
-li:hover .hidden
-{
-    display: block;
-    align-items: center;
-    
-}
-ul 
-{
-    list-style-type: none;
-    align-items: center;
-    display: inline-block;
-    flex-direction: column;
-}
-}
+
+
 
 
 
@@ -151,14 +117,18 @@ ul
 {
     display: none;
 }
-.p1
+.p1,.p2
 {
     font-size: 30px;
     font-family: 'Kalam', cursive ;
     display:inline;
     position: relative;
     color:rgb(25, 112, 211);
-    
+      
+}
+.p1
+{
+    top:-11px; 
 }
 .sec
 {
@@ -232,3 +202,73 @@ ul
 {
     background-image: url("IF/author.png");
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px)
+{
+.screendiv
+{
+    flex-direction: column;
+    margin: auto; 
+    width:100%;  
+}
+.img1,.img11
+{
+    padding: 0px 10px;
+    width:99%;height:400px;
+}
+.telP
+{
+    padding:0px 10px;
+}
+li .hidden
+{
+    text-align: center;
+    display: none;
+}
+li:hover .hidden
+{
+    display: block;
+    align-items: center;
+    
+}
+ul 
+{
+    list-style-type: none;
+    align-items: center;
+    display: inline-block;
+    flex-direction: column;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
