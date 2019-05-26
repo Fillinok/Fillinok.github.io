@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Событие onselect</title>
+ </head>
+ <body>
+    <script type="text/javascript">
+    GetText = function() {
+    if (window.getSelection) {
+      return window.getSelection();
+    }
+    else 
+      if (document.getSelection) {
+        return document.getSelection();
+      }
+      else
+        if (document.selection) {
+          return document.selection.createRange().text;
+        } 
+  }
+  Vid = function()
+  {
+      var x = GetText();
+      document.getElementById("p1").innerHTML=x;
+  }
+    </script>
+  <form action="">
+    <TEXTAREA cols="40" rows="10" onselect="Vid();">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy 
+        nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. 
+        Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper 
+        suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+      </TEXTAREA>
+      <p id="p1"> Привет Мир!</p>
+  </form>
+ </body>
+</html>
